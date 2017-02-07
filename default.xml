@@ -122,6 +122,9 @@
   <project  name="LineageOS/android_external_stagefright-plugins" path="external/stagefright-plugins"
             remote="github" revision="cm-14.1" />
 
+  <!-- Other -->
+  <project groups="pdk-cw-fs,pdk-fs" name="DirtyUnicorns/android_frameworks_support" path="frameworks/support" remote="github" revision="n7x" />
+
   <!-- CodeAurora Forums -->
 
   <project groups="pdk-cw-fs,pdk-fs" name="device/common" />
@@ -425,7 +428,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" />
   <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs" />
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/support" path="frameworks/support" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/volley" path="frameworks/volley" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/webview" path="frameworks/webview" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" />
