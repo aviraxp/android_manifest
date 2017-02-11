@@ -4,6 +4,11 @@
   <!-- Begin Remotes -->
 
   <remote name="XOS"
+          revision="XOS-7.1"
+          fetch="https://github.com/halogenOS/"
+          review="http://review.halogenos.org/" />
+
+  <remote name="XOS-rebase"
           revision="XOS-7.1-rebase"
           fetch="https://github.com/halogenOS/"
           review="http://review.halogenos.org/" />
@@ -27,9 +32,30 @@
 
   <!-- halogenOS -->
 
-  <project groups="pdk" name="android_build" path="build" remote="XOS">
+  <!-- Build system -->
+  <project groups="pdk" name="android_build" path="build" remote="XOS-rebase">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
+
+  <!-- External -->
+  <project name="android_external_busybox" path="external/busybox" remote="XOS" />
+  <project name="android_external_mm-dash" path="external/mm-dash" remote="XOS" />
+  <project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="XOS" />
+  <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="XOS" />
+  <project name="android_external_libnetfilter_conntrack" path="external/libnetfilter_conntrack" remote="XOS" />
+
+  <!-- Packages -->
+  <project name="android_packages_apps_Browser" path="packages/apps/Browser" remote="XOS" />
+  <project groups="pdk-fs" name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="XOS" />
+  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="cm-14.1" />
+  <project groups="pdk-fs" name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="XOS" />
+
+  <!-- Prebuilts -->
+  <project groups="linux,pdk,tradefed" name="android_prebuilts_ninja_linux-x86" path="prebuilts/ninja/linux-x86" remote="XOS" />
+
+  <!-- Vendor -->
+  <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
+  <project name="android_vendor_xos" path="vendor/xos" remote="XOS" />
 
   <!-- CodeAurora Forums -->
 
@@ -65,8 +91,6 @@
   <project groups="pdk" name="platform/external/android-clat" path="external/android-clat"/>
   <project groups="pdk" name="platform/external/androidplot" path="external/androidplot"/>
   <project groups="pdk" name="platform/external/ant-glob" path="external/ant-glob"/>
-  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" />
-  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" />
   <project groups="pdk" name="platform/external/antlr" path="external/antlr"/>
   <project groups="pdk" name="platform/external/apache-commons-math" path="external/apache-commons-math"/>
   <project groups="pdk" name="platform/external/apache-harmony" path="external/apache-harmony"/>
@@ -195,7 +219,6 @@
   <project groups="pdk" name="platform/external/libmicrohttpd" path="external/libmicrohttpd"/>
   <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2"/>
   <project groups="pdk" name="platform/external/libmtp" path="external/libmtp"/>
-  <project name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack"/>
   <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci" />
   <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
   <project name="platform/external/libnfnetlink" path="external/libnfnetlink"/>
@@ -230,7 +253,6 @@
   <project groups="pdk" name="platform/external/messageformat" path="external/messageformat"/>
   <project groups="pdk" name="platform/external/minijail" path="external/minijail"/>
   <project groups="pdk" name="platform/external/mksh" path="external/mksh"/>
-  <project name="platform/external/mm-dash" path="external/mm-dash" />
   <project groups="pdk" name="platform/external/mmc-utils" path="external/mmc-utils"/>
   <project groups="pdk" name="platform/external/mockftpserver" path="external/mockftpserver"/>
   <project groups="pdk" name="platform/external/mockito" path="external/mockito"/>
@@ -462,7 +484,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" />
   <project groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc" />
   <project groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" />
-  <project groups="linux,pdk,tradefed" name="platform/prebuilts/ninja/linux-x86" path="prebuilts/ninja/linux-x86" />
   <project groups="linux,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" />
   <project groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" />
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" />
@@ -498,7 +519,6 @@
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" />
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" />
   <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" />
-  <project groups="qcom" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth" />
   <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" />
   <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" />
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" />
