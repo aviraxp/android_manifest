@@ -67,7 +67,7 @@
   <!-- Vendor -->
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
   <project name="android_vendor_qcom-opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="XOS-rebase" />
-  <project name="android_vendor_xos" path="vendor/xos" remote="XOS" />
+  <project name="android_vendor_xos" path="vendor/xos" remote="XOS-rebase" />
 
   <!-- Various repositories maintained by LineageOS -->
 
