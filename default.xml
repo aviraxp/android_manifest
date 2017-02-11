@@ -57,15 +57,20 @@
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
   <project name="android_vendor_xos" path="vendor/xos" remote="XOS" />
 
+  <!-- Various repositories maintained by LineageOS -->
+
+  <!-- Device -->
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="XOS" />
+
+  <!-- Hardware -->
+  <include name="hals/hals.xml" />
+  <project groups="pdk" name="android_hardware_libhardware" path="hardware/libhardware" remote="XOS"  />
+
   <!-- CodeAurora Forums -->
 
   <project groups="pdk-cw-fs,pdk-fs" name="device/common" />
   <project groups="device,fugu,broadcom_pdk,generic_fs,pdk" name="device/google/atv" />
   <project groups="device,marlin" name="device/google/contexthub" />
-  <project name="device/qcom/common" >
-    <copyfile dest="build.sh" src="build.sh"/>
-    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
   <project name="device/qcom/sepolicy" />
   <project groups="pdk" name="device/sample" />
   <project name="kernel/lk" path="bootable/bootloader/lk" />
@@ -376,17 +381,7 @@
   <project groups="pdk,broadcom_wlan" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" />
   <project groups="pdk" name="platform/hardware/google/apf" path="hardware/google/apf" />
   <project groups="nvensense,pdk" name="platform/hardware/invensense" path="hardware/invensense" />
-  <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware" />
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" />
-  <project groups="qcom,default" name="platform/hardware/qcom/audio" path="hardware/qcom/audio" />
-  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" />
-  <project groups="qcom" name="platform/hardware/qcom/bt" path="hardware/qcom/bt" />
-  <project groups="qcom,default" name="platform/hardware/qcom/camera" path="hardware/qcom/camera" />
-  <project groups="qcom,default" name="platform/hardware/qcom/display" path="hardware/qcom/display" />
-  <project groups="qcom,qcom_gps" name="platform/hardware/qcom/gps" path="hardware/qcom/gps" />
-  <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media" />
-  <project groups="qcom_wlan" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
-  <project groups="pdk" name="platform/hardware/ril" path="hardware/ril" />
   <project groups="pdk" name="platform/libcore" path="libcore" />
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper" />
   <project groups="generic_fs" name="platform/ndk" path="ndk" />
@@ -520,8 +515,6 @@
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" />
   <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" />
   <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" />
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" />
-  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" />
   <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" />
   <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" />
   <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests" />
@@ -529,7 +522,6 @@
   <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
   <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" />
   <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
-  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" />
   <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
   <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="vendor/qcom/opensource/wlan/qcacld-2.0" />
