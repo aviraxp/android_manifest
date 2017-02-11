@@ -60,6 +60,7 @@
 
   <!-- Vendor -->
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
+  <project name="android_vendor_qcom-opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="XOS-rebase" />
   <project name="android_vendor_xos" path="vendor/xos" remote="XOS" />
 
   <!-- Various repositories maintained by LineageOS -->
@@ -520,7 +521,6 @@
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" />
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" />
   <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" />
-  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" />
   <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" />
   <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" />
   <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests" />
