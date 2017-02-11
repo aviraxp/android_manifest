@@ -526,10 +526,4 @@
   <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="vendor/qcom/opensource/wlan/qcacld-2.0" />
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" />
-  <project name="platform/vendor/qcom/cobalt" path="device/qcom/msmcobalt" />
-  <project name="platform/vendor/qcom/thorium_32" path="device/qcom/msm8937_32" />
-  <project name="platform/vendor/qcom/thorium_64" path="device/qcom/msm8937_64" />
-  <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" />
-  <project name="platform/vendor/qcom/titanium_32" path="device/qcom/msm8953_32" />
-  <project name="platform/vendor/qcom/titanium_64" path="device/qcom/msm8953_64" />
 </manifest>
