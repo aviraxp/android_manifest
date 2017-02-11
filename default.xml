@@ -37,6 +37,9 @@
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
 
+  <!-- Device -->
+  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="XOS"  />
+
   <!-- External -->
   <project name="android_external_busybox" path="external/busybox" remote="XOS" />
   <project name="android_external_mm-dash" path="external/mm-dash" remote="XOS" />
@@ -73,7 +76,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="device/common" />
   <project groups="device,fugu,broadcom_pdk,generic_fs,pdk" name="device/google/atv" />
   <project groups="device,marlin" name="device/google/contexthub" />
-  <project name="device/qcom/sepolicy" />
   <project groups="pdk" name="device/sample" />
   <project name="kernel/lk" path="bootable/bootloader/lk" />
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" />
