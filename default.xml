@@ -64,6 +64,10 @@
   <!-- Skia -->
   <project groups="pdk,qcom_msm8x26" name="android_external_skia" path="external/skia" remote="XOS-rebase" />
 
+  <!-- System -->
+  <project groups="pdk" name="android_system_keymaster" path="system/keymaster" remote="XOS-rebase" />
+  <project groups="pdk" name="android_system_security" path="system/security" remote="XOS-rebase" />
+
   <!-- Vendor -->
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
   <project name="android_vendor_qcom-opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="XOS-rebase" />
@@ -80,6 +84,9 @@
 
   <!-- Packages -->
   <project groups="pdk-fs" name="LineageOS/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="cm-14.1" />
+
+  <!-- System -->
+  <project groups="pdk" name="android_system_extras" path="system/extras" remote="XOS" />
 
 <!-- LineageOS
      Why LineageOS?
@@ -534,16 +541,13 @@
   <project name="platform/system/connectivity/dhcp_client" path="system/connectivity/dhcp_client" />
   <project name="platform/system/connectivity/shill" path="system/connectivity/shill" />
   <project groups="pdk" name="platform/system/core" path="system/core" />
-  <project groups="pdk" name="platform/system/extras" path="system/extras" />
   <project name="platform/system/firewalld" path="system/firewalld" />
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" />
-  <project groups="pdk" name="platform/system/keymaster" path="system/keymaster" />
   <project groups="pdk" name="platform/system/media" path="system/media" />
   <project name="platform/system/nativepower" path="system/nativepower" />
   <project groups="pdk" name="platform/system/netd" path="system/netd" />
   <project name="platform/system/nvram" path="system/nvram" />
   <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" />
-  <project groups="pdk" name="platform/system/security" path="system/security" />
   <project groups="pdk" name="platform/system/sepolicy" path="system/sepolicy" />
   <project groups="pdk" name="platform/system/tools/aidl" path="system/tools/aidl" />
   <project name="platform/system/tpm" path="system/tpm" />
