@@ -61,6 +61,9 @@
   <!-- Prebuilts -->
   <project groups="linux,pdk,tradefed" name="android_prebuilts_ninja_linux-x86" path="prebuilts/ninja/linux-x86" remote="XOS" />
 
+  <!-- Skia -->
+  <project groups="pdk,qcom_msm8x26" name="android_external_skia" path="external/skia" remote="XOS-rebase" />
+
   <!-- Vendor -->
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
   <project name="android_vendor_qcom-opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="XOS-rebase" />
@@ -344,7 +347,6 @@
   <project groups="pdk" name="platform/external/selinux" path="external/selinux"/>
   <project groups="pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly"/>
   <project groups="pdk" name="platform/external/shflags" path="external/shflags"/>
-  <project groups="pdk,qcom_msm8x26" name="platform/external/skia" path="external/skia"/>
   <project groups="pdk" name="platform/external/sl4a" path="external/sl4a"/>
   <project groups="pdk" name="platform/external/slf4j" path="external/slf4j"/>
   <project groups="pdk" name="platform/external/smali" path="external/smali"/>
