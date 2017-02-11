@@ -4,7 +4,7 @@
   <!-- Begin Remotes -->
 
   <remote name="XOS"
-          revision="XOS-7.1"
+          revision="XOS-7.1-rebase"
           fetch="https://github.com/halogenOS/"
           review="http://review.halogenos.org/" />
 
