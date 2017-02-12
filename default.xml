@@ -81,7 +81,7 @@
   <!-- System -->
   <project groups="pdk" name="android_system_bt" path="system/bt" remote="XOS" />
   <project groups="pdk" name="android_system_core" path="system/core" remote="XOS-rebase" />
-  <project groups="pdk" name="android_system_media" path="system/media" remote="XOS" />
+  <project groups="pdk" name="android_system_media" path="system/media" remote="XOS-rebase" />
   <project groups="pdk" name="android_system_keymaster" path="system/keymaster" remote="XOS-rebase" />
   <project groups="pdk" name="android_system_security" path="system/security" remote="XOS-rebase" />
   <project groups="pdk" name="android_system_sepolicy" path="system/sepolicy" remote="XOS-rebase" />
