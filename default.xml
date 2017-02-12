@@ -60,6 +60,7 @@
   <project name="android_packages_apps_Browser" path="packages/apps/Browser" remote="XOS" />
   <project groups="pdk-fs" name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="XOS" />
   <project groups="pdk-fs" name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="XOS" />
+  <project groups="pdk-cw-fs,pdk-fs" name="android_packages_services_Telephony" path="packages/services/Telephony" remote="XOS-rebase" />
 
   <!-- Prebuilts -->
   <project groups="linux,pdk,tradefed" name="android_prebuilts_ninja_linux-x86" path="prebuilts/ninja/linux-x86" remote="XOS" />
@@ -509,7 +510,6 @@
   <project groups="adp8064,pdk-cw-fs,pdk-fs" name="platform/packages/services/Car" path="packages/services/Car" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Mms" path="packages/services/Mms" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" />
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Telephony" path="packages/services/Telephony" />
   <project groups="pdk-fs" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" />
   <project groups="pdk" name="platform/pdk" path="pdk" />
   <project groups="pdk-fs,pdk-cw-fs,cts" name="platform/platform_testing" path="platform_testing" />
