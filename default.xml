@@ -64,6 +64,7 @@
 
   <!-- Packages -->
   <project name="android_packages_apps_Browser" path="packages/apps/Browser" remote="XOS" />
+  <project groups="pdk-cw-fs,pdk-fs" name="android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="XOS" />
   <project groups="pdk-fs" name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="XOS" />
   <project groups="pdk-fs" name="android_packages_apps_Settings" path="packages/apps/Settings" remote="XOS-rebase" />
   <project groups="pdk-fs" name="android_packages_apps_Terminal" path="packages/apps/Terminal" remote="XOS" />
@@ -78,6 +79,7 @@
   <project groups="pdk,qcom_msm8x26" name="android_external_skia" path="external/skia" remote="XOS-rebase" />
 
   <!-- System -->
+  <project groups="pdk" name="android_system_bt" path="system/bt" remote="XOS" />
   <project groups="pdk" name="android_system_core" path="system/core" remote="XOS-rebase" />
   <project groups="pdk" name="android_system_keymaster" path="system/keymaster" remote="XOS-rebase" />
   <project groups="pdk" name="android_system_security" path="system/security" remote="XOS-rebase" />
@@ -448,7 +450,6 @@
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper" />
   <project groups="generic_fs" name="platform/ndk" path="ndk" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" />
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" />
   <project name="platform/packages/apps/CMFileManager" path="packages/apps/CMFileManager" />
   <project groups="pdk-fs" name="platform/packages/apps/Calculator" path="packages/apps/Calculator" />
   <project groups="pdk-fs" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" />
@@ -542,7 +543,6 @@
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" />
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" />
-  <project groups="pdk" name="platform/system/bt" path="system/bt" />
   <project groups="pdk" name="platform/system/ca-certificates" path="system/ca-certificates" />
   <project name="platform/system/connectivity/apmanager" path="system/connectivity/apmanager" />
   <project name="platform/system/connectivity/dhcp_client" path="system/connectivity/dhcp_client" />
