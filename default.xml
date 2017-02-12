@@ -96,6 +96,9 @@
   <!-- Device -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="XOS" />
 
+  <!-- External -->
+  <project groups="pdk" name="android_external_f2fs-tools" path="external/f2fs-tools" remote="XOS" />
+
   <!-- Hardware -->
   <include name="hals/hals.xml" />
   <project groups="pdk" name="android_hardware_libhardware" path="hardware/libhardware" remote="XOS" />
@@ -224,7 +227,6 @@
   <project groups="pdk" name="platform/external/esd" path="external/esd"/>
   <project groups="pdk" name="platform/external/expat" path="external/expat"/>
   <project groups="pdk" name="platform/external/eyes-free" path="external/eyes-free"/>
-  <project groups="pdk" name="platform/external/f2fs-tools" path="external/f2fs-tools"/>
   <project groups="pdk" name="platform/external/fdlibm" path="external/fdlibm"/>
   <project groups="pdk" name="platform/external/fec" path="external/fec"/>
   <project groups="pdk" name="platform/external/fio" path="external/fio"/>
