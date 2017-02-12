@@ -85,6 +85,7 @@
   <project groups="pdk" name="android_system_keymaster" path="system/keymaster" remote="XOS-rebase" />
   <project groups="pdk" name="android_system_security" path="system/security" remote="XOS-rebase" />
   <project groups="pdk" name="android_system_sepolicy" path="system/sepolicy" remote="XOS-rebase" />
+  <project groups="pdk" name="android_system_vold" path="system/vold" remote="XOS-rebase" />
 
   <!-- Vendor -->
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
@@ -560,7 +561,6 @@
   <project groups="pdk" name="platform/system/tools/aidl" path="system/tools/aidl" />
   <project name="platform/system/tpm" path="system/tpm" />
   <project groups="pdk" name="platform/system/update_engine" path="system/update_engine" />
-  <project groups="pdk" name="platform/system/vold" path="system/vold" />
   <project name="platform/system/weaved" path="system/weaved" />
   <project name="platform/system/webservd" path="system/webservd" />
   <project groups="tools" name="platform/tools/external/fat32lib" path="tools/external/fat32lib"/>
