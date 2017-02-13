@@ -47,6 +47,7 @@
   <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="XOS" />
 
   <!-- External -->
+  <project groups="pdk" name="android_external_boringssl" path="external/boringssl" remote="XOS-rebase" />
   <project name="android_external_busybox" path="external/busybox" remote="XOS" />
   <project name="android_external_mm-dash" path="external/mm-dash" remote="XOS" />
   <project groups="pdk" name="android_external_okhttp" path="external/okhttp" remote="XOS-rebase" />
@@ -185,7 +186,6 @@
   <project groups="pdk" name="platform/external/avahi" path="external/avahi"/>
   <project groups="pdk" name="platform/external/bison" path="external/bison"/>
   <project groups="pdk" name="platform/external/blktrace" path="external/blktrace"/>
-  <project groups="pdk" name="platform/external/boringssl" path="external/boringssl"/>
   <project groups="pdk" name="platform/external/bouncycastle" path="external/bouncycastle"/>
   <project name="platform/external/brctl" path="external/brctl" />
   <project groups="pdk" name="platform/external/bsdiff" path="external/bsdiff"/>
