@@ -38,6 +38,9 @@
   <!-- Bionic -->
   <project groups="pdk" name="android_bionic" path="bionic" remote="XOS-rebase" />
 
+  <!-- Bootable -->
+  <project groups="pdk" name="android_bootable_recovery" path="bootable/recovery" remote="XOS-rebase" />
+
   <!-- Build system -->
   <project groups="pdk" name="android_build" path="build" remote="XOS-rebase">
     <copyfile dest="Makefile" src="core/root.mk"/>
@@ -68,10 +71,19 @@
   <!-- Packages -->
   <project name="android_packages_apps_Browser" path="packages/apps/Browser" remote="XOS" />
   <project groups="pdk-cw-fs,pdk-fs" name="android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="XOS" />
+  <project groups="pdk-fs" name="android_packages_apps_Contacts" path="packages/apps/Contacts" remote="XOS-rebase" />
+  <project groups="pdk-fs" name="android_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="XOS" />
+  <project groups="pdk-fs" name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="XOS-rebase" />
+  <project groups="pdk-fs" name="android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="XOS" />
+  <project groups="pdk-fs" name="android_packages_apps_Messaging" path="packages/apps/Messaging" remote="XOS-rebase" />
+  <project groups="pdk-cw-fs,pdk-fs" name="android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" remote="XOS-rebase" />
+  <project groups="pdk-fs" name="android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="XOS-rebase" />
+  <project groups="apps_stk,pdk-fs" name="android_packages_apps_Stk" path="packages/apps/Stk" remote="XOS-rebase" />
   <project groups="pdk-fs" name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="XOS" />
   <project groups="pdk-fs" name="android_packages_apps_Settings" path="packages/apps/Settings" remote="XOS-rebase" />
   <project groups="pdk-fs" name="android_packages_apps_Terminal" path="packages/apps/Terminal" remote="XOS" />
   <project groups="pdk-fs" name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="XOS" />
+  <project groups="pdk-cw-fs,pdk-fs" name="android_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="XOS-rebase" />
   <project groups="pdk-cw-fs,pdk-fs" name="android_packages_services_Telecomm" path="packages/services/Telecomm" remote="XOS-rebase" />
   <project groups="pdk-cw-fs,pdk-fs" name="android_packages_services_Telephony" path="packages/services/Telephony" remote="XOS-rebase" />
 
@@ -157,7 +169,6 @@
   <project groups="pdk" name="device/sample" />
   <project name="kernel/lk" path="bootable/bootloader/lk" />
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" />
-  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" />
   <project groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" />
   <project groups="pdk,tradefed" name="platform/build/kati" path="build/kati" />
   <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" >
@@ -462,26 +473,19 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" />
-  <project groups="pdk-fs" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" />
-  <project groups="pdk-fs" name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon" />
   <project groups="pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" />
-  <project groups="pdk-fs" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" />
   <project groups="pdk-fs" name="platform/packages/apps/Email" path="packages/apps/Email" />
   <project groups="pdk-fs" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" />
   <project groups="pdk-fs" name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" />
   <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" />
-  <project groups="pdk-fs" name="platform/packages/apps/FMRadio" path="packages/apps/FMRadio" />
   <project groups="pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" />
   <project groups="pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" />
   <project groups="pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" />
   <project groups="pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" />
-  <project groups="pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" />
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms" />
   <project groups="apps_nfc,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" />
   <project groups="pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" />
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" />
   <project groups="pdk-fs" name="platform/packages/apps/Phone" path="packages/apps/Phone" />
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" />
   <project groups="pdk-fs" name="platform/packages/apps/Protips" path="packages/apps/Protips" />
   <project groups="pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" />
   <project name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" />
@@ -493,7 +497,6 @@
   <project groups="pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" />
   <project groups="pdk-fs" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" />
   <project groups="pdk-fs" name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder" />
-  <project groups="apps_stk,pdk-fs" name="platform/packages/apps/Stk" path="packages/apps/Stk" />
   <project name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" />
   <project name="platform/packages/apps/TV" path="packages/apps/TV" />
   <project groups="pdk-fs" name="platform/packages/apps/Tag" path="packages/apps/Tag" />
@@ -509,7 +512,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" />
   <project groups="pdk-fs" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" />
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" />
   <project groups="pdk-fs" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" />
