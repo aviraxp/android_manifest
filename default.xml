@@ -108,6 +108,9 @@
   <project name="android_vendor_qcom-opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="XOS-rebase" />
   <project name="android_vendor_xos" path="vendor/xos" remote="XOS-rebase" />
 
+  <!-- Substratum -->
+  <project name="TeamSubstratum/masquerade" path="packages/apps/masquerade" remote="github" revision="n" />
+
   <!-- Various repositories maintained by LineageOS -->
 
   <!-- Device -->
