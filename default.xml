@@ -45,6 +45,7 @@
   <project groups="pdk" name="android_build" path="build" remote="XOS-rebase">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
+  <project groups="pdk,tradefed" name="android_build_kati" path="build/kati" remote="XOS-rebase" />
 
   <!-- Device -->
   <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="XOS" />
@@ -170,7 +171,6 @@
   <project name="kernel/lk" path="bootable/bootloader/lk" />
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" />
   <project groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" />
-  <project groups="pdk,tradefed" name="platform/build/kati" path="build/kati" />
   <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" >
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
