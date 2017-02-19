@@ -100,7 +100,6 @@
 
   <!-- Vendor -->
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
-  <project name="android_vendor_qcom-opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="XOS" />
   <project name="android_vendor_xos" path="vendor/xos" remote="XOS" />
 
   <!-- masquerade -->
@@ -567,8 +566,6 @@
   <project groups="tools" name="platform/tools/external/gradle" path="tools/external/gradle"/>
   <project groups="pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" />
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" />
-  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" />
-  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" />
   <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
   <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" />
   <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
