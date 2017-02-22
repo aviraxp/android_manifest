@@ -103,8 +103,8 @@
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
   <project name="android_vendor_xos" path="vendor/xos" remote="XOS" />
 
-  <!-- masquerade -->
-  <project name="masquerade" path="packages/apps/masquerade" remote="XOS" revision="n" />
+  <!-- Substratum -->
+  <project name="TeamSubstratum/masquerade" path="packages/apps/masquerade" remote="github" revision="n" />
 
   <!-- Various repositories maintained by LineageOS -->
 
