@@ -473,7 +473,7 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" />
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" />
   <project groups="pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" />
-  <!--<project groups="pdk-fs" name="platform/packages/apps/Email" path="packages/apps/Email" />-->
+  <project groups="pdk-fs" name="platform/packages/apps/Email" path="packages/apps/Email" />
   <project groups="pdk-fs" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" />
   <!-- <project groups="pdk-fs" name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" />-->
   <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" />
@@ -500,7 +500,7 @@
   <project groups="pdk-fs" name="platform/packages/apps/Tag" path="packages/apps/Tag" />
   <project groups="pdk" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" />
   <project groups="pdk-fs" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" />
-  <!--<project groups="pdk-fs" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" />-->
+  <project groups="pdk-fs" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" />
   <project name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" />
   <!--<project name="platform/packages/experimental" path="packages/experimental" />-->
   <project groups="pdk-fs" name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" />
